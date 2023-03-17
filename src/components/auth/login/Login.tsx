@@ -1,7 +1,9 @@
 import React from 'react'
 import style from './style.module.css'
+import { useState } from 'react'
 
-const Login = () => {
+const Login = (props: any) => {
+  const {setEmail, setPassword} = props
 
   return (
     <>
@@ -11,8 +13,8 @@ const Login = () => {
       <h3 className={style.title}>
         Enter your login and password please
       </h3>
-      <input type={'email'} placeholder='Enter email' className='input'/>
-      <input type={'password'} placeholder='Enter password' className='input'/>
+      <input type={'email'} onChange={(e)=>setEmail(e.target.value)} placeholder='Enter email' className='input'/>
+      <input type={'password'} onChange={(e)=>setPassword(e.target.value)} placeholder='Enter password' className='input'/>
       <button type='submit' className='btn'>Enter</button>
       <h3 className='sub_title'>
         Dont have an acount? <span>Registration</span>
