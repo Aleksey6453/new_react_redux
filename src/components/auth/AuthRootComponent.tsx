@@ -11,8 +11,7 @@ const AuthRootComponent = () => {
     <div className='main'>
         <div className="form">
             <div className="wrap">
-                {location.pathname === '/login' ? <Login /> : location.pathname === '/register' ? <Register /> : null}
-                
+                {location.pathname === '/login' ? <Login /> : location.pathname === '/register' ? <Register /> : null}    
             </div>
         </div>
     </div>
