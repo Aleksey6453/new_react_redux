@@ -5,6 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 import PrivateRoute from './utilits/router/privateRoute'
 import AuthRootComponent from './components/auth/AuthRootComponent';
 
+
 function App() {
   return (
     <div className='main'>

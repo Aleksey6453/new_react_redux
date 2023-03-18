@@ -1,8 +1,9 @@
 import React from 'react'
 import style from './style.module.css'
 import { useState } from 'react'
+import { IPropsLogin } from '../../../common/types/auth'
 
-const Login = (props: any) => {
+const Login: React.FC<IPropsLogin> = (props: IPropsLogin):JSX.Element => {
   const {setEmail, setPassword} = props
 
   return (
